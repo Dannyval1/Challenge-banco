@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Generalidades */
+.w-35{
+    width:35%;
+}
 .w-60{
     width:60px;
 }
@@ -101,6 +104,9 @@
 /*=============*/
 
 /*** Body ***/
+.custom-toggler.navbar-toggler {
+    border-color: #1f90cd;
+} 
 .dot{
     height: 5px;
     width: 5px;
@@ -140,11 +146,23 @@
         margin: 0 auto;
         width:40%;
     }
+    .navbar-brand {
+        width: 65%;
+    }
+    .info-gerente{
+        justify-content: flex-end;
+    }
+    .full-height{
+        max-height: 568px;
+    }
 }
 
 @media (min-width: 768px) {
     .logo-aval{
         width:15%;
+    }
+    .full-height{
+        max-height: 1024px;
     }
 }
 
@@ -152,6 +170,9 @@
     .logo-aval{
         display: block;
         margin-right: inherit;
+    }
+    .full-height{
+        max-height: 768px;
     }
 }
 /*=============*/

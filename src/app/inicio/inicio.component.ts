@@ -12,7 +12,8 @@ export class InicioComponent implements OnInit {
   data_nit: Pedido = {
     nit: "800220154"
   };
-  data_cliente: Cliente ={
+  
+  data_cliente: Cliente = {
     nit: '',
     nombre: '',
     capa: '',
@@ -26,7 +27,7 @@ export class InicioComponent implements OnInit {
     this.obtenerCliente();
   }
 
-  private obtenerCliente(){
+  public obtenerCliente(){
     this.globalService.getClient(this.data_nit)
     .subscribe((respuesta:Cliente)=>{
       this.data_cliente = respuesta;
