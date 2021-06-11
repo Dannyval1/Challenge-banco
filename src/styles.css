@@ -140,6 +140,12 @@
 /*================*/
 
 /*** Media Queries ***/
+@media (max-width:320px){
+    .w-35 {
+        width: 100%;
+    }
+}
+
 @media (min-width: 320px) {
     .logo-aval{
         display: block;
@@ -153,7 +159,7 @@
         justify-content: flex-end;
     }
     .full-height{
-        max-height: 568px;
+        min-height: 568px;
     }
 }
 
